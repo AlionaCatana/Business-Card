@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+      color: #fff;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      margin: auto;
+      margin-top: 150px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    #business-card .name{
+        float: left;
+        width: 150px;
+        text-align: right;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-right: 5px;
+    }
+    #business-card .info{
+        float: left;  
+        width: 200px;
+        border-left: 2px solid #fff;
+        margin-top: 50px;
+        padding-left: 5px;
+    }
+    #business-card .name h1{
+      font-weight: 300;
+    }
+    #business-card .name h2{
+      color: #b96;
+      font-weight: 300;
+    }
+    #business-card .name small{
+      color: #777;
+    }
+    #business-card .info li{
+        color: #777;
+        font-size: 0.75em;
+    }
+    /* #business-card .info li:before{
+        content: "# ";
+        color: #b96;
+        font-size: 1.5em;
+    } */
+    #business-card .info li:before{
+        content: "\0040";
+        color: #b96;
+        font-size: 1.5em;
+        padding-right: 0.25em;
+    }
+    #business-card .info li:first-child:before{
+        content: "\260F";
+        color: #b96;
+        font-size: 1.5em;
+        padding-right: 0.25em;
+    }
+    #business-card .info li:last-child:before{
+        content: "\269D";
+        color: #b96;
+        font-size: 1.5em;
+        padding-right: 0.25em;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="business-card">
+  
+      <div class="name">
+        <h1>Firstname</h1>
+        <h2>Lastname</h2>
+        <small>web designer &#47; developer</small>
+      </div>
+      <div class="info">
+        <p>12345 Some Street, City<br>State, Province, Country</p>
+         <ul>
+           <li>+00 22 333444</li>
+           <li>email@somemail.example</li>
+           <li>www.exampledomain.example</li>
+         </ul>
+      </div>
+  
+    </div>
+  </body>
+</html>
